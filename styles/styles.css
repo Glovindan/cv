@@ -42,7 +42,7 @@ header {
     background: #cc0000;
     padding: 3vh;
     display: flex;
-
+    gap: 1vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -67,6 +67,7 @@ header {
 }
 .header-contacts {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 1vh;
     width: 100%;
@@ -153,3 +154,19 @@ main {
     .main-notmain p{
         margin-left: 2vw;
     }
+@media screen and (max-width: 700px){
+    .global-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main {
+        display: block;
+        height: fit-content;
+        overflow: inherit;
+    }
+        main:hover {
+            overflow: inherit;
+        }
+}
