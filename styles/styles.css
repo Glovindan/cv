@@ -139,8 +139,7 @@ main {
 .skills-low {
     background: #999999;
 }
-
-.projects li a:hover {
+.projects li:hover {
     transition: .1s;
     background: rgba(255,255,255,0.5);
 }
