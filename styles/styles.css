@@ -59,7 +59,13 @@ header {
     .avatar-wrapper img {
         width: inherit;
         border-radius: 100%;
+        transition: transform 1s ease-in-out;
     }
+
+    .avatar-wrapper:hover img{
+        transform: rotate(360deg);
+    }
+
 .header-qualities {
     display: flex;
     flex-direction: column;
@@ -78,14 +84,15 @@ header {
         width: 100%;
         border: 1px solid black;
 
+        background: linear-gradient(to right, black 50%, transparent 50%) right bottom;
+        background-size: 200% 100%;
+
+        transition: all .3s ease-out;
     }
     .header-contacts a:hover{
-        transition: .1s;
-        background: #cc6666;
-    }
-    .header-contacts a:active{
-        transition: .1s;
-        background: #663333;
+        transition: all .3s ease-out;
+        background-position: left bottom;
+        color: #77b900;
     }
 
 
