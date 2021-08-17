@@ -87,10 +87,10 @@ header {
         background: linear-gradient(to right, black 50%, transparent 50%) right bottom;
         background-size: 200% 100%;
 
-        transition: all .3s ease-out;
+        transition: background-position .3s ease-out;
     }
     .header-contacts a:hover{
-        transition: all .3s ease-out;
+        transition: background-position .3s ease-out;
         background-position: left bottom;
         color: #77b900;
     }
