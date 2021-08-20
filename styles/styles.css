@@ -44,7 +44,9 @@ h1 {
 h2 {
     font-size: medium;
 }
-
+.icon {
+    height: 35px;
+}
 header {
     background: #77b900;
     padding: 2vh 2vh 0;
