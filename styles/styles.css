@@ -48,7 +48,10 @@ h2 {
     height: 35px;
 }
 header {
-    background: #77b900;
+    background: rgb(0,102,204);
+    background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;
+    background-size: 30vw;
+
     padding: 2vh 2vh 0;
     display: flex;
     flex-direction: column;
@@ -59,7 +62,10 @@ header {
 }
 
 footer {
-    background: #77b900;
+    background: rgb(0,102,204);
+    background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;
+    background-size: 30vw;
+
     padding: 3vh;
     display: flex;
     gap: 1vh;
@@ -115,7 +121,7 @@ footer {
     .header-contacts a:hover{
         transition: background-position .3s ease-out;
         background-position: left bottom;
-        color: #77b900;
+        color: #0066cc;
     }
 
 
@@ -212,6 +218,11 @@ main {
 
     header {
         padding: 3vh;
+        background-size: 100vw;
+    }
+
+    footer {
+        background-size: 100vw;
     }
     main {
         display: block;
