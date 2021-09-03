@@ -48,9 +48,11 @@ h2 {
     height: 35px;
 }
 header {
-    background: rgb(0,102,204);
-    background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;
-    background-size: 30vw;
+    background: linear-gradient(238.72deg, #FFB864 0%, #006C4C 100%), radial-gradient(100% 224.43% at 0% 0%, #FCC482 0%, #002E74 100%), linear-gradient(121.28deg, #FFEAB6 0%, #00563C 100%), linear-gradient(229.79deg, #7534FF 0%, #248900 94.19%), radial-gradient(56.26% 101.79% at 50% 0%, #8F00FF 0%, #493500 100%), linear-gradient(65.05deg, #6F0072 0%, #FFD600 100%);
+    background-blend-mode: overlay, screen, color-burn, hard-light, screen, normal;
+    background-attachment: fixed;
+    /*background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;*/
+    background-size: 500px;
 
     padding: 2vh 2vh 0;
     display: flex;
@@ -62,9 +64,11 @@ header {
 }
 
 footer {
-    background: rgb(0,102,204);
-    background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;
-    background-size: 30vw;
+    background: linear-gradient(238.72deg, #FFB864 0%, #006C4C 100%), radial-gradient(100% 224.43% at 0% 0%, #FCC482 0%, #002E74 100%), linear-gradient(121.28deg, #FFEAB6 0%, #00563C 100%), linear-gradient(229.79deg, #7534FF 0%, #248900 94.19%), radial-gradient(56.26% 101.79% at 50% 0%, #8F00FF 0%, #493500 100%), linear-gradient(65.05deg, #6F0072 0%, #FFD600 100%);
+    background-blend-mode: overlay, screen, color-burn, hard-light, screen, normal;
+    background-attachment: fixed;
+    /*background: linear-gradient(31deg, rgba(0, 102, 204, 1) 11%, rgba(119, 185, 0, 1) 100%) fixed;*/
+    background-size: 500px;
 
     padding: 3vh;
     display: flex;
@@ -81,6 +85,7 @@ footer {
     flex-direction: column;
     gap: 1vh;
     align-items: center;
+    
 }
 .avatar-wrapper {
     width: 100% ;
@@ -116,12 +121,12 @@ footer {
         background: linear-gradient(to right, black 50%, transparent 50%) right bottom;
         background-size: 200% 100%;
 
-        transition: background-position .3s ease-out;
+        transition: .3s ease-out;
     }
     .header-contacts a:hover{
-        transition: background-position .3s ease-out;
+        transition: .3s ease-out;
         background-position: left bottom;
-        color: #0066cc;
+        color: white;
     }
 
 
