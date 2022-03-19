@@ -47,10 +47,17 @@ h2 {
 .icon {
     height: 35px;
 }
+
+.role {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.icon-role {
+    height: 18px;
+}
 header {
-    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), linear-gradient(121.28deg, #213100 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
-    background-blend-mode: screen, color-dodge, overlay, difference, normal;
-    background-attachment: fixed;
+    background: #32b76c;
     background-size: 500px;
 
     padding: 2vh 2vh 0;
@@ -63,9 +70,7 @@ header {
 }
 
 footer {
-    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), linear-gradient(121.28deg, #213100 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
-    background-blend-mode: screen, color-dodge, overlay, difference, normal;
-    background-attachment: fixed;
+    background: #32b76c;
     background-size: 500px;
 
     padding: 3vh;
@@ -186,7 +191,9 @@ main {
     background: #999999;
     color: white;
 }
-
+.projects {
+    line-height: 1.5;
+}
 .projects span {
     background: #999999;
     padding: .5vh 1vh;
