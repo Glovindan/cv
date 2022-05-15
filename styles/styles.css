@@ -57,7 +57,8 @@ h2 {
     height: 18px;
 }
 header {
-    background: #32b76c;
+    /*background: cornflowerblue;*/
+    background: whitesmoke;
     background-size: 500px;
 
     padding: 2vh 2vh 0;
@@ -70,7 +71,8 @@ header {
 }
 
 footer {
-    background: #32b76c;
+    /*background: cornflowerblue;*/
+    background: whitesmoke;
     background-size: 500px;
 
     padding: 3vh;
@@ -88,19 +90,16 @@ footer {
     flex-direction: column;
     gap: 1vh;
     align-items: center;
-
 }
+
 .avatar-wrapper {
+    padding: 10px;
     width: 100% ;
 }
     .avatar-wrapper img {
         width: inherit;
         border-radius: 100%;
         transition: transform 1s ease-in-out;
-    }
-
-    .avatar-wrapper:hover img{
-        transform: rotate(360deg);
     }
 
 .header-qualities {
@@ -115,28 +114,44 @@ footer {
     gap: 1vh;
     width: 100%;
 }
-    .header-contacts a {
-        text-align: center;
-        padding: 1vh;
-        width: 100%;
-        border: 1px solid black;
 
-        background: linear-gradient(to right, black 50%, transparent 50%) right bottom;
-        background-size: 200% 100%;
+.button {
+    padding: 1vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px black inset;
+}
 
-        transition: .3s ease-out;
-    }
-    .header-contacts a:hover{
-        transition: .3s ease-out;
-        background-position: left bottom;
-        color: white;
-    }
+.button > div {
+    position: relative;
+    z-index: 1111;
+}
 
+.button:before {
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: -100%;
+    z-index: 1;
+    transition: left .3s ease   ;
+}
+
+.button:hover {
+    color: whitesmoke;
+}
+
+.button:hover:before {
+    left: 0;
+}
 
 main {
-    overflow: hidden;
+    overflow: scroll;
     padding-bottom: 5vh;
-
     grid-area: 1 / 2 / 4 / 6;
 }
     main:hover {
@@ -144,17 +159,21 @@ main {
     }
 
     main::-webkit-scrollbar {
-        width: 1px;
+        width: 0px;
     }
-
     main::-webkit-scrollbar-thumb {
-        background: #000;
+        background: rgb(0, 0, 0);
     }
     main h2 {
         font-size: 200%;
     }
+
 .main-main {
-    background: #cccccc;
+    /*background: #cccccc;*/
+    /*background: mediumseagreen;*/
+    background: lightgray;
+    /*border: 2px black dotted;*/
+    border-top: none;
     padding: 2vh;
     display: flex;
     flex-direction: column;
@@ -179,34 +198,37 @@ main {
         border-radius: 100vh;
         padding: 1vh 2vh;
     }
+
 .skills-high {
-    background: #FF2400;
-    color: white;
+    background: gold;
+    color: black;
 }
 .skills-medium {
-    background: #0066cc;
+    background: royalblue;
     color: white;
 }
 .skills-low {
-    background: #999999;
+    background: darkgrey;
     color: white;
 }
 .projects {
     line-height: 1.5;
 }
 .projects span {
-    background: #999999;
     padding: .5vh 1vh;
     border-radius: 100vh;
+    border: 2px darkslateblue solid;
+    color: darkslateblue;
 }
+
 .projects li:hover {
     transition: .1s;
-    border-radius: 100vh;
     background: rgba(255,255,255,0.5);
+    border-radius: 100px;
 }
     .projects li:hover span{
         transition: .3s;
-        background: #0066cc;
+        background: darkslateblue;
         color: white;
     }
 
@@ -219,6 +241,7 @@ main {
     .main-notmain p{
         margin-left: 2vw;
     }
+
 @media screen and (max-width: 700px){
     .global-wrapper {
         display: flex;
