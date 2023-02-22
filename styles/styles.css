@@ -39,7 +39,7 @@ hr {
 h1 {
     text-align: center;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 130%;
 }
 h2 {
     font-size: medium;
@@ -94,7 +94,8 @@ footer {
 
 .avatar-wrapper {
     padding: 10px;
-    width: 100% ;
+    width: 100%;
+    max-width: 300px;
 }
     .avatar-wrapper img {
         width: inherit;
@@ -189,42 +190,58 @@ main {
 }
 .skills{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1vh;
 }
     .skills li{
-        list-style-type: none;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         margin: 0;
-        border-radius: 100vh;
-        padding: 1vh 2vh;
+        padding: 5px;
+        border-bottom: 1px black solid;
+        color: black;
+        font-weight: bold;
     }
-
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
 .skills-high {
-    background: gold;
-    color: black;
+    font-weight: bold;
+    color: darkslateblue;
 }
 .skills-medium {
-    background: royalblue;
-    color: white;
+    font-weight: bold;
+    color: royalblue;
 }
 .skills-low {
-    background: darkgrey;
-    color: white;
+    font-weight: bold;
+    color: deepskyblue;
 }
 .projects {
     line-height: 1.5;
 }
+
+.projects li {
+    line-height: 1.5;
+    list-style-type: "🔗";
+}
+
 .projects span {
-    padding: .5vh 1vh;
-    border-radius: 100vh;
-    border: 2px darkslateblue solid;
-    color: darkslateblue;
+    padding: 1vh;
+    font-weight: bold;
 }
 
 .projects li:hover {
     transition: .1s;
     background: rgba(255,255,255,0.5);
-    border-radius: 100px;
+    /*border-radius: 100px;*/
 }
     .projects li:hover span{
         transition: .3s;
@@ -241,6 +258,12 @@ main {
     .main-notmain p{
         margin-left: 2vw;
     }
+
+@media screen and (max-width: 1500px){
+    .skills-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (max-width: 700px){
     .global-wrapper {
@@ -265,4 +288,8 @@ main {
         main:hover {
             overflow: inherit;
         }
+
+    .skills-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
